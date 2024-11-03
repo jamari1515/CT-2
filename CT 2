@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string> 
+
+using namespace std;
+
+int main() {
+    string firstString, secondString, concatenatedString;
+
+    for (int i = 1; i <= 3; ++i) {
+        cout << "Enter the first string for pair " << i << ": ";
+        getline(cin, firstString); 
+
+        cout << "Enter the second string for pair " << i << ": ";
+        getline(cin, secondString); 
+
+        concatenatedString = firstString + " " + secondString;
+
+        cout << "Concatenated result for pair " << i << ": " << concatenatedString << endl << endl;
+    }
+
+    return 0;
+}
+
